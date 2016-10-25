@@ -10,11 +10,21 @@
     <div class="container">
       <nav class="main-navigator">
         <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Прайс-лист</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="main-navigator-item">
+            <a class="main-navigator-link" href="#">Информация</a>
+          </li>
+          <li class="main-navigator-item">
+            <a class="main-navigator-link" href="#">Новости</a>
+          </li>
+          <li class="main-navigator-item">
+            <a class="main-navigator-link" href="#">Прайс-лист</a>
+          </li>
+          <li class="main-navigator-item">
+            <a class="main-navigator-link" href="#">Магазин</a>
+          </li>
+          <li class="main-navigator-item">
+            <a class="main-navigator-link" href="#">Контакты</a>
+          </li>
         </ul>
       </nav>
       <div class="user-block">
@@ -27,50 +37,82 @@
     <div class="shop-navigator">
       <h1>Средства для ухода</h1>
       <ul class="breadcrumbs">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li><a href="#">Средства для ухода</a></li>
-        <li>Набор для путешествий «Baxter of california»</li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="#">Магазин</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="#">Средства для ухода</a>
+        </li>
+        <li class="breadcrumbs-item active">
+          Набор для путешествий «Baxter of california»
+        </li>
       </ul>
     </div>
 
-    <div class="item-pictures">
-      <figure>
-        <img src="http://placehold.it/150x100" alt="Набор для путешествий «Baxter of california»">
-        <img src="http://placehold.it/150x100" alt="Набор для путешествий «Baxter of california»">
-        <img src="http://placehold.it/150x100" alt="Набор для путешествий «Baxter of california»">
-        <img src="http://placehold.it/150x100" alt="Набор для путешествий «Baxter of california»">
-      </figure>
-    </div>
+    <div class="wrapper">
+      <div class="item-picture">
+        <figure>
+          <img src="http://placehold.it/150x100" alt="Набор для путешествий «Baxter of california»">
+        </figure>
+        <figure>
+          <ul class="small-picture-block">
+            <li class="additional-picture">
+              <img src="http://placehold.it/150x100" alt="Набор для путешествий «Baxter of california»">
+            </li>
+            <li class="additional-picture">
+              <img src="http://placehold.it/150x100" alt="Набор для путешествий «Baxter of california»">
+            </li>
+            <li class="additional-picture">
+              <img src="http://placehold.it/150x100" alt="Набор для путешествий «Baxter of california»">
+            </li>
+          </ul>
+        </figure>
+      </div>
 
-    <div class="item-text">
-      <div class="availability">Есть в наличии</div>
-      <div class="item-vendor-code">Артикул: dexter-ae</div>
+      <div class="item-text">
+        <div class="item-status">
+          <div class="availability">Есть в наличии</div>
+          <div class="item-vendor-code">Артикул: dexter-ae</div>
+        </div>
 
-      <p class="item-description">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все,
-        что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания,
-        увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+        <p class="item-description">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все,
+          что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания,
+          увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
 
-      <div class="price">2 900 руб</div>
-      <button class="add-to-cart">Купить</button>
+        <div class="buy-item">
+          <div class="price">2 900 руб</div>
+          <button class="add-to-cart">Купить</button>
+        </div>
 
-      <section class="item-consist">
-        <ul>
-          <li>Средство для умывания (50 мл)</li>
-          <li>Увлажняющий крем (50 мл)</li>
-          <li>Крем для бритья (50 мл)</li>
-          <li>Крем после бритья, шампунь (50 мл)</li>
-          <li>Удобная кожаная косметичка</li>
-        </ul>
-      </section>
-    </div>
+        <section class="item-consist">
+          <ul>
+            <li>Средство для умывания (50 мл)</li>
+            <li>Увлажняющий крем (50 мл)</li>
+            <li>Крем для бритья (50 мл)</li>
+            <li>Крем после бритья, шампунь (50 мл)</li>
+            <li>Удобная кожаная косметичка</li>
+          </ul>
+        </section>
+      </div>
 
-    <div class="page-navigator">
-      <ul>
-        <li><a class="" href="#">1</a></li>
-        <li><a class="active-page">2</a></li>
-        <li><a class="" href="#">3</a></li>
-        <li><a class="" href="#">4</a></li>
+
+    <div>
+      <ul class="page-navigator">
+        <li class="page-navigator-button">
+          <a href="#">1</a>
+        </li>
+        <li class="page-navigator-button active">
+          <a>2</a>
+        </li>
+        <li class="page-navigator-button">
+          <a href="#">3</a>
+        </li>
+        <li class="page-navigator-button">
+          <a href="#">4</a>
+        </li>
       </ul>
     </div>
 
