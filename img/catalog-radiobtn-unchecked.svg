@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="22.031" height="21.969" viewBox="0 0 22.031 21.969">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+        stroke: #000101;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        filter: url(#color-overlay-1);
+        fill-rule: evenodd;
+      }
+    </style>
+
+    <filter id="color-overlay-1" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#f9f6f3"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="SourceGraphic" result="solidFill"/>
+    </filter>
+  </defs>
+  <g style="fill: #000; filter: url(#color-overlay-1)">
+    <path d="M11.009,1.001 C16.536,1.001 21.018,5.474 21.018,10.992 C21.018,16.511 16.536,20.984 11.009,20.984 C5.481,20.984 1.000,16.511 1.000,10.992 C1.000,5.474 5.481,1.001 11.009,1.001 Z" id="path-1" style="stroke: inherit; filter: none; fill: inherit" class="cls-1"/>
+  </g>
+  <use xlink:href="#path-1" style="stroke: #000101; filter: none; fill: none"/>
+</svg>
