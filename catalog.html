@@ -4,19 +4,37 @@
     <meta charset="UTF-8">
     <title>Barbershop Catalog</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
 </head>
-<body>
+<body class="catalog">
 
     <header class="main-header">
 
       <div class="container clearfix">
         <nav class="main-navigation">
+
           <ul>
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Прайс-лист</a></li>
-            <li><a href="#">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li class="main-navigator-item">
+              <div class="to-main">
+                <a href="link-to-main"><img src="img/Logo.png" alt="На главную"></a>
+              </div>
+            </li>
+            <li class="main-navigator-item">
+              <a class="main-navigator-link" href="#">Информация</a>
+            </li>
+            <li class="main-navigator-item">
+              <a class="main-navigator-link" href="#">Новости</a>
+            </li>
+            <li class="main-navigator-item">
+              <a class="main-navigator-link" href="#">Прайс-лист</a>
+            </li>
+            <li class="main-navigator-item">
+              <a class="main-navigator-link" href="#">Магазин</a>
+            </li>
+            <li class="main-navigator-item">
+              <a class="main-navigator-link" href="#">Контакты</a>
+            </li>
           </ul>
         </nav>
         <div class="user-block">
@@ -30,9 +48,15 @@
       <div class="shop-navigator">
         <h1>Средства для ухода</h1>
         <ul class="breadcrumbs">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li>Средства для ухода</li>
+          <li class="breadcrumbs-item">
+            <a><a class="breadcrumbs-link" href="#">Главная</a></a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Магазин</a>
+          </li>
+          <li class="breadcrumbs-item active">
+            Средства для ухода
+          </li>
         </ul>
       </div>
 
@@ -42,25 +66,25 @@
             <div class="producer filter">
               <h2>Производители:</h2>
               <ul>
-                <li><label><input type="checkbox" name="baxter-of-california" checked> Baxter of california</label></li> <br>
-                <li><label><input type="checkbox" name="mr-natty"> Mr Natty</label></li> <br>
-                <li><label><input type="checkbox" name="suavecito" checked> Suavecito</label></li> <br>
-                <li><label><input type="checkbox" name="malin-goetz"> Malin+Goetz</label></li> <br>
-                <li><label><input type="checkbox" name="murrays"> Murray's</label></li> <br>
-                <li><label><input type="checkbox" name="american-crew" checked> American crew</label></li>
+                <li><input type="checkbox" name="baxter-of-california" id="baxter-of-california" checked><label for="baxter-of-california">Baxter of california</label></li> <br>
+                <li><input type="checkbox" name="mr-natty" id="mr-natty"><label for="mr-natty">Mr Natty</label></li> <br>
+                <li><input type="checkbox" name="suavecito" id="suavecito" checked><label for="suavecito">Suavecito</label></li> <br>
+                <li><input type="checkbox" name="malin-goetz" id="malin-goetz"><label for="malin-goetz">Malin+Goetz</label></li> <br>
+                <li><input type="checkbox" name="murrays" id="murrays"><label for="murrays">Murray's</label></li> <br>
+                <li><input type="checkbox" name="american-crew" id="american-crew" checked><label for="american-crew">American crew</label></li>
               </ul>
             </div>
 
             <div class="goods-group filter">
               <h2>Группы товаров:</h2>
               <ul>
-                <li><label><input type="radio" name="item-type" value="shaving-products">  Бритвенные принадлежности</label></li> <br>
-                <li><label><input type="radio" name="item-type" value="care-products" checked> Средства для ухода</label></li> <br>
-                <li><label><input type="radio" name="item-type" value="accessories"> Аксессуары</label></li>
+                <li><input type="radio" name="item-type" value="shaving-products" id="shaving-products"><label for="shaving-products">Бритвенные принадлежности</label></li> <br>
+                <li><input type="radio" name="item-type" value="care-products" id="care-products" checked><label for="care-products">Средства для ухода</label></li> <br>
+                <li><input type="radio" name="item-type" value="accessories" id="accessories"><label for="accessories">Аксессуары</label></li>
               </ul>
             </div>
 
-            <button type="submit" class="show-btn">Показать</button>
+            <button type="submit" class="show-btn btn">Показать</button>
           </form>
         </div>
 
