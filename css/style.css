@@ -13,8 +13,7 @@ body.index{
 
 body.catalog{
   color: #000000;
-  background: #000000 url("../img/catalog-bg.png") no-repeat center top;
-  background-size: cover;
+  background: #000000 url("../img/catalog-bg.png") repeat center top;
 }
 
 h1 {
@@ -53,15 +52,19 @@ h2 {
 }
 
 .main-navigation {
+  position: relative;
   float: left;
   width: 780px;
 }
 
 .main-navigation a {
   display: block;
-  padding: 25px 20px;
   color: #ffffff;
   text-decoration: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-navigation a:hover {
@@ -81,13 +84,17 @@ h2 {
   line-height: 20px;
   vertical-align: top;
 }
+li .active::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 56px;
+  height: 4px;
+  background: #ffffff;
+}
 
-/*тут что-то не работает, картинка
- в начале меню увеличивает высоту паддингами, которые никак не отменяются*/
-
-.main-navigation a .link-to-main {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.link-to-main {
+  height: 20px;
 }
 
 .user-block {
@@ -585,6 +592,10 @@ h2 {
   margin-bottom: 35px;
 }
 
+.filter li:hover {
+  color: #663d15;
+}
+
 .producer {
   margin-bottom: 55px;
 }
@@ -741,7 +752,7 @@ article {
   position: absolute;
   bottom: 0;
   left: 11px;
-  top: 8px;
+  top: 4px;
   display: block;
   width: 8px;
   height: 8px;
